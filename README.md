@@ -21,12 +21,13 @@ jialab-utils/
 ├── README.md              # 仓库说明、使用指南、贡献规则（简要）
 ├── CONTRIBUTING.md        # 更详细的贡献说明
 ├── scripts/               # 各种可直接运行的脚本和小项目
+│   ├── snakemake/
 │   ├── python/
-│   ├── R/
+│   ├── r/
 │   └── bash/
 ├── lib/                   # 可复用模块（import 用的 Python / R 包代码）
 │   ├── python/
-│   └── R/
+│   └── r/
 └── docs/                  # 使用说明、教程、示例
 ```
 
@@ -124,7 +125,7 @@ cd jialab_utils
 如果是 Snakemake 流程，可以建一个子目录，例如：
 
 ```text
-scripts/python/sra_download/
+scripts/snakemake/sra_download/
   ├── Snakefile
   ├── config.yaml.example
   └── README.md    # 或 docs/sra_download.md
